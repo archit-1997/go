@@ -10,4 +10,7 @@ func main() {
 
 	structures.BuildStruct()
 	structures.BuildAnonymousStruct()
+	structures.PointerToStruct()
+	structures.Anonymous()
+	structures.Nested()
 }
