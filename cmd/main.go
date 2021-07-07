@@ -2,34 +2,45 @@ package main
 
 import (
 	"fmt"
-	"github.com/archit-1997/go/deferCalls"
-	"github.com/archit-1997/go/structures"
+	"github.com/archit-1997/go/godefer"
+	"github.com/archit-1997/go/goerrors"
+	"github.com/archit-1997/go/gofunctions"
+	"github.com/archit-1997/go/gostructures"
 )
 
 func main() {
 	fmt.Println("I'm the main file")
 
-	//structures in go
-	structures.BuildStruct()
-	structures.BuildAnonymousStruct()
-	structures.PointerToStruct()
-	structures.Anonymous()
-	structures.Nested()
+	//gostructures in go
+	gostructures.BuildStruct()
+	gostructures.BuildAnonymousStruct()
+	gostructures.PointerToStruct()
+	gostructures.Anonymous()
+	gostructures.Nested()
 
 	//use of defer
 
 	//creating, closing and writing to a file
-	f := deferCalls.CreateFile("defer.txt")
+	f := godefer.CreateFile("defer.txt")
 	//the below line will be executed as the last statement of func main()
-	defer deferCalls.CloseFile(f)
-	deferCalls.WriteFile(f)
+	defer godefer.CloseFile(f)
+	godefer.WriteFile(f)
 
 	//order of calls using the defer statement
-	deferCalls.OrderOfCalls()
+	godefer.OrderOfCalls()
 
 	//increment operation with defer calls
-	deferCalls.DeferIncrements()
+	godefer.DeferIncrements()
 
 	//incrementing pointers with defer calls
-	deferCalls.DeferPointers()
+	godefer.DeferPointers()
+
+	//working with errors in go
+	goerrors.ErrorImplementation()
+
+	//functions in go
+	gofunctions.GoFunction()
+	gofunctions.NamedReturn()
+	gofunctions.MultipleReturns()
+
 }

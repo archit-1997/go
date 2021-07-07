@@ -1,4 +1,4 @@
-package deferCalls
+package godefer
 
 import (
 	"fmt"

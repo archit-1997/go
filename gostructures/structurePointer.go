@@ -1,4 +1,4 @@
-package structures
+package gostructures
 
 import "fmt"
 
@@ -13,7 +13,7 @@ func PointerToStruct() {
 		gender:    'M',
 	}
 
-	fmt.Println("Hi, I explain about pointer to structures")
+	fmt.Println("Hi, I explain about pointer to gostructures")
 
 	//to print the values, we need to dereference
 	fmt.Println((*rohan).firstName)
