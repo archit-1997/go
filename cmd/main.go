@@ -5,13 +5,14 @@ import (
 	"github.com/archit-1997/go/godefer"
 	"github.com/archit-1997/go/goerrors"
 	"github.com/archit-1997/go/gofunctions"
+	"github.com/archit-1997/go/gopointers"
 	"github.com/archit-1997/go/gostructures"
 )
 
 func main() {
 	fmt.Println("I'm the main file")
 
-	//gostructures in go
+	//structures in go
 	gostructures.BuildStruct()
 	gostructures.BuildAnonymousStruct()
 	gostructures.PointerToStruct()
@@ -43,4 +44,10 @@ func main() {
 	gofunctions.NamedReturn()
 	gofunctions.MultipleReturns()
 
+	//pointers in go
+	gopointers.PointerImpl()
+	gopointers.PassReference()
+
+	//pass by value of pointers in go
+	gopointers.PassPointerByValue()
 }
