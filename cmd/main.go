@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/archit-1997/go/goconditional"
 	"github.com/archit-1997/go/godefer"
 	"github.com/archit-1997/go/goerrors"
 	"github.com/archit-1997/go/gofunctions"
@@ -50,4 +51,9 @@ func main() {
 
 	//pass by value of pointers in go
 	gopointers.PassPointerByValue()
+
+	//conditional statements in Go
+	goconditional.IfElse()
+	goconditional.Switch()
+
 }
